@@ -60,5 +60,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera to show jewelry on your face and improve your AR experience!</string>
+	<key>NSContactsUsageDescription</key>
+	<string>We need access to your contact to show chat.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We need to access to your gallery to save your AR photos!</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your gallery to show your AR photos!</string>
+	<key>UISupportedInterfaceOrientations - 2</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
 </dict>
 </plist>

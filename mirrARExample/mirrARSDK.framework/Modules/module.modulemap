@@ -1,0 +1,11 @@
+framework module mirrARSDK {
+  umbrella header "mirrARSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module mirrARSDK.Swift {
+    header "mirrARSDK-Swift.h"
+    requires objc
+}
