@@ -17,9 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.camera = [[MARCameraViewController alloc] init];
-    self.camera.brandID = @"ffae6dac-89e4-41df-8973-e58a60efc9c4";
-    self.camera.brandName = @"Tanishqwebar";
+    
     NSDictionary *options =  @{
         @"productData": @{
                 @"Necklaces": @{
@@ -44,16 +42,47 @@
                 }
         }
     };
-    self.camera.productData = options;
     NSDictionary *loginParam = @{@"username": @"tanishqwebar",
         @"password": @"w4y0EihepyIAA50U",
         @"type": @"ios_sdk"
       };
     
+    
+    //For sakshi test
+    /*
+    NSDictionary *options = @{
+        @"productData": @{
+                @"Bracelets": @{
+                        @"items": @[@"BR-01", @"BR-02", @"BR-03"],
+                        @"type": @"wrist"
+                },
+                @"Earrings": @{
+                        @"items": @[@"1503677279384_RIB_2113_1", @"CT-2032", @"CS2124E"],
+                        @"type": @"ear"
+                },
+                @"Rings": @{
+                        @"items": @[@"RN-01", @"RN-013", @"RN-01543"],
+                        @"type": @"finger"
+                },
+                @"Sets": @{
+                        @"items": @[@"CS-414"],
+                        @"type": @"set"
+                }
+        }
+    };
+    
+    
+    NSDictionary *loginParam = @{@"username": @"sakshi",
+        @"password": @"w4y0EihepyIAA50U",
+        @"type": @"ios_sdk"
+      };
+    */
+    self.camera = [[MARCameraViewController alloc] init];
+    self.camera.productData = options;
     self.camera.loginParams = loginParam;
-    [self presentViewController:self.camera animated:YES completion:^{
-        
-    }];
+    [self.navigationController pushViewController:self.camera animated:NO];
+
+    
 }
 
 

@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		VjyrIqLpiDdozHjviLCb/cyo3/g=
+		</data>
 		<key>FontAwesome.ttf</key>
 		<data>
 		YdjZZ4B+8SWY2BWC+pW59gDD7gE=
 		</data>
 		<key>Frameworks/HandTracker.framework/HandTracker</key>
 		<data>
-		aY7R3nxOxsQ3n/6/23/jx+Bdj14=
+		JAfZXP/McLL4FsvMH/+7qhoBqxo=
 		</data>
 		<key>Frameworks/HandTracker.framework/Info.plist</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		eNacGcSIGRgYP9hqyhATgm1iKHc=
+		IYaYcsMDcpIaaBnE27zgH3c8J3E=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -94,11 +98,23 @@
 		</data>
 		<key>Headers/MARCameraViewController.h</key>
 		<data>
-		kG7Ue1agAxAD+9QkowLeu1I/N20=
+		fSxFUCtjKgihuqJ19Myavtf1YXE=
+		</data>
+		<key>Headers/MARFindHandView.h</key>
+		<data>
+		Aq+GhYzCxAgjtVO2Q9jH1xClr3o=
 		</data>
 		<key>Headers/MARPickerView.h</key>
 		<data>
-		b0J2EmO3VYAdtyCigawUPge9YeQ=
+		ry1t+ck49VxC7zwjXWhESJEwLHg=
+		</data>
+		<key>Headers/MARPostCreateViewController.h</key>
+		<data>
+		iUytJ9674MFB33334qXg2qBWzLw=
+		</data>
+		<key>Headers/MARRecordButton.h</key>
+		<data>
+		BLndB8oPPod2XcAiiA52fhCYfhE=
 		</data>
 		<key>Headers/mirrARSDK-Swift.h</key>
 		<data>
@@ -110,15 +126,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		db5fB3S5yYiRUsfJk7eHU+J3wh8=
+		J6VtVk6ayNiBuJwasmMSxPsEZaU=
+		</data>
+		<key>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<data>
+		v9xjlRi3gsCpDn5Dia1apV2FRMU=
+		</data>
+		<key>Main.storyboardc/Info.plist</key>
+		<data>
+		DcJEDF4mtjDecXXDEeqk1MN7KKU=
+		</data>
+		<key>Main.storyboardc/UINavigationController-x5b-eK-u4J.nib</key>
+		<data>
+		S7FTB0b3mHdJj1LtP5eoYpnc2xs=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		qrwBqM0xbKlAoO0SHz+OMjes6i0=
+		TRNZmXmG7NSQCoRjbxLTnOljrfQ=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		qrwBqM0xbKlAoO0SHz+OMjes6i0=
+		TRNZmXmG7NSQCoRjbxLTnOljrfQ=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -126,7 +154,7 @@
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		U+SAaBXrgF24qmg5DBh6H+Nbops=
+		b07EOu5RULoQnuQTg/1SrNlYmr8=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -134,7 +162,7 @@
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		U+SAaBXrgF24qmg5DBh6H+Nbops=
+		b07EOu5RULoQnuQTg/1SrNlYmr8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -151,6 +179,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WRGIx57dIA4la8xJGFfqVQplln1f3QvmYz/QJNGwtnQ=
+			</data>
+		</dict>
 		<key>FontAwesome.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -162,7 +197,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E+Bm4fzrRXADcJKW8K/ebrl9F8YRbZM4DXrVt8Em0no=
+			DQCCq8hplpuoVduAK7EinCeA2fgptkGMKDTz7rqHVQc=
 			</data>
 		</dict>
 		<key>Frameworks/HandTracker.framework/Info.plist</key>
@@ -239,7 +274,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VwuYetzqlFC751sdb2DkiiCk3NkKo1yhu3ta4XvfpV8=
+			CAub4zHuXL16m45JfrfM9319h9t+OeFrXp67hBFltjU=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -309,14 +344,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			heV2JUwP0IOHfY3/SVGw7AgYJ7T18ZhOhc8SfbB8XME=
+			8VQjB3dHmYc+qxOAe74Rc1RtoVVuW+IHU/j1dPukM9o=
+			</data>
+		</dict>
+		<key>Headers/MARFindHandView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wT2bMP0hnseFRs9L95SED5JGXL3J5/0MNiCxaLTYxKs=
 			</data>
 		</dict>
 		<key>Headers/MARPickerView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KkDmXfXppqtTTHbwL1f+aVfKtD6bfXiXrR/0CXhKn4U=
+			Bj8waqgHYFRwTaO2hedZ6fs4WpW5THR2fI93lc6f+c0=
+			</data>
+		</dict>
+		<key>Headers/MARPostCreateViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0dh/jFsI6yOoPHnfNhNPnwx13Yu8oWHYxZYrcCc/1O8=
+			</data>
+		</dict>
+		<key>Headers/MARRecordButton.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SU4OgTqlSX27JQ+yP17FCv+l/KIxW6rlzYnwEDZvG9A=
 			</data>
 		</dict>
 		<key>Headers/mirrARSDK-Swift.h</key>
@@ -333,18 +389,39 @@
 			FCmtt4wySQ4PaLcUqIDnNvTkYOH3K6LHsiTQ1Iay0oU=
 			</data>
 		</dict>
+		<key>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zo4FWP19+cY0VUwMdjodVtbi4VJJ/QF/a4/Hg1kYhUM=
+			</data>
+		</dict>
+		<key>Main.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Lg9ZUrwkxLd8xey2FbHuWh2OKxboItQa3LKVcE2t0YY=
+			</data>
+		</dict>
+		<key>Main.storyboardc/UINavigationController-x5b-eK-u4J.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mMXEIoBhiVV5/CbCG09eeTpC15a/s4Culctd2evRT24=
+			</data>
+		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			me8G0KSUMSOQMOgDI+KwcgxjDo28+5DVECgtPbbVt3I=
+			bm8Oy4xD3PjnmoX+nhc+BTFc+MzgQsdYcQ3q9LjwLlM=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			me8G0KSUMSOQMOgDI+KwcgxjDo28+5DVECgtPbbVt3I=
+			bm8Oy4xD3PjnmoX+nhc+BTFc+MzgQsdYcQ3q9LjwLlM=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -358,7 +435,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uYP1lkCEKyHLu9VqGvgik40FMXW2EW0YX45CWN6QCoc=
+			YUC7q50mkJmgpMZKQJG3YpCGgojg84yk0FCpwCd/U4Y=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/arm64.swiftdoc</key>
@@ -372,7 +449,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uYP1lkCEKyHLu9VqGvgik40FMXW2EW0YX45CWN6QCoc=
+			YUC7q50mkJmgpMZKQJG3YpCGgojg84yk0FCpwCd/U4Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

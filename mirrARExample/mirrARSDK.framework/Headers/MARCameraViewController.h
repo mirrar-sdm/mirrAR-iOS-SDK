@@ -9,20 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "MARPickerView.h"
 
+
 @interface MARCameraViewController : UIViewController<MARPickerViewDelegate>
 
-- (void)setupCamera;
-
-@property (nonatomic) int landmarkingStyle; // 4
-@property (nonatomic) BOOL showsDots;
-@property (nonatomic) BOOL mediaPipeEnabled;
-
+// Init Property
 @property (nonatomic, strong) NSString *brandID;
 @property (nonatomic, strong) NSString *brandName;
 @property (nonatomic, strong) NSDictionary *productData;
 @property (nonatomic, strong) NSDictionary *loginParams;
+
+// Tools
+@property (nonatomic) BOOL showsDots;
 @property (nonatomic, strong) MARPickerView *pickerOverlayView;
+
 + (MARCameraViewController*)sharedInstance;
-- (void)handML;
 
 @end
