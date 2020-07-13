@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		3+uqOzGy1sGmgR3blIq2jQRLk9M=
+		Mfg8cCYefJW4xILWdg5CHM2YiBs=
 		</data>
 		<key>FontAwesome.ttf</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/HandTracker.framework/HandTracker</key>
 		<data>
-		KSXuNI/0sAdxXRThFYs7W0NfoxA=
+		0Hd11uQo8qQ/sK8oVDPH0PI9KQs=
 		</data>
 		<key>Frameworks/HandTracker.framework/Info.plist</key>
 		<data>
@@ -96,9 +96,9 @@
 		<data>
 		RxtbTN3LjpFChp3tmniX3KD+dsE=
 		</data>
-		<key>Headers/AppDelegate.h</key>
+		<key>Hand.png</key>
 		<data>
-		B7q0G9wfOQgO5WmzScy1jeKmdGM=
+		dAB/ejw72XH0DwyTmfpf/eLVv/M=
 		</data>
 		<key>Headers/MARCameraViewController.h</key>
 		<data>
@@ -134,15 +134,19 @@
 		</data>
 		<key>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		x6oksZc0EKmMvENaKib9qvBNYFU=
+		JWr9Zsbw3QvvSsJ5plvH95d6Jww=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
-		DcJEDF4mtjDecXXDEeqk1MN7KKU=
+		syKf9UrJcdTJcT8TwninLkmt+dM=
+		</data>
+		<key>Main.storyboardc/MARCameraViewController.nib</key>
+		<data>
+		roKokVNhIoNvy8glSzQZSwyre2A=
 		</data>
 		<key>Main.storyboardc/UINavigationController-x5b-eK-u4J.nib</key>
 		<data>
-		Oa6XgolyHMLxOja/pnQt4XyibrE=
+		Zq2N6dwT5pdozjzaolae9XPXUbQ=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
@@ -172,6 +176,18 @@
 		<data>
 		mL1MXN10XzNGUvGNYvd193Irb/Y=
 		</data>
+		<key>cross.png</key>
+		<data>
+		OlFOLkQvXi2xL0EgQ/E0hOd/nJ4=
+		</data>
+		<key>down.png</key>
+		<data>
+		3rKnSlnv65TRja6FeXHGsSqMlbc=
+		</data>
+		<key>face.png</key>
+		<data>
+		GYttarEaKw6n+QaoiuSM+iyWm0w=
+		</data>
 		<key>icon.ttf</key>
 		<data>
 		rSx640hccn6qyQ4kYF9emcW3YVw=
@@ -180,6 +196,18 @@
 		<data>
 		+MLjuQPsAAHyN/eKSMobBlgkCPs=
 		</data>
+		<key>save.png</key>
+		<data>
+		TW9h5QSZRH7I1jICSDmHUUlDSos=
+		</data>
+		<key>share.png</key>
+		<data>
+		VIXp5bobw/9yqdKVEjRo3x370Sk=
+		</data>
+		<key>up.png</key>
+		<data>
+		dXhcXI77MjKGP/4t6ZAdTJHCjJo=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -187,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AdmsF4tJMUU7yzvJ3h2CeY+HTep1tXNMfDIt9qd1v6s=
+			dltrxk6nbi3ygzwsi+7Cz12LTSNGSedDVO5qOSVhwkE=
 			</data>
 		</dict>
 		<key>FontAwesome.ttf</key>
@@ -201,7 +229,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qCEGgK2b1d0WsQb6samTqKlk5suYu30wNB/+lPuVqnk=
+			xRyNk6lBgip3g4Jl70H2R+JG2nO2e4HzSsdbatl+FgQ=
 			</data>
 		</dict>
 		<key>Frameworks/HandTracker.framework/Info.plist</key>
@@ -344,11 +372,11 @@
 			2pAlL0mzu5QuX4gBgKFFYfZpKW5/s+3s3quqi2u3gio=
 			</data>
 		</dict>
-		<key>Headers/AppDelegate.h</key>
+		<key>Hand.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NRAw8HZKlCA1tEbkA8BvZwRHwPXECDuQOi6yR0rPurM=
+			/tBImASAhKV53tN60tPhyO+uaXN2C/invjlo1hVqdAU=
 			</data>
 		</dict>
 		<key>Headers/MARCameraViewController.h</key>
@@ -404,21 +432,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q7RQYct+cnu8OwJEEusJ11GhbTc9g/s1RHr4/smo1FU=
+			ONIVojdhR/7YG4ZKMmCiq9+QnAxLB0F0n4DWWbUc7Uw=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lg9ZUrwkxLd8xey2FbHuWh2OKxboItQa3LKVcE2t0YY=
+			KqdbBpejC4GRswTqEiluHXg2F1DYAxxok895PnJUIsI=
+			</data>
+		</dict>
+		<key>Main.storyboardc/MARCameraViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XhNsygTb8UWgtW7DeD4pwbmfS9u2160zai5jHsO3c8s=
 			</data>
 		</dict>
 		<key>Main.storyboardc/UINavigationController-x5b-eK-u4J.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wkgLodXcMp9orJOq/QIgQjWuCNLZ9C8F0xjCi5urFjE=
+			e62Tp77jBymjuOOALEtYo5pS+Cy8fBztDxxxrxo3Egs=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
@@ -470,6 +505,27 @@
 			udNE3bM6B4m1sd4Dtpec7bAgnkxxs8k+IKvnZUW2K3o=
 			</data>
 		</dict>
+		<key>cross.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WjtQHqt18IO+e0axM6bqQJXScdhwahYoJoAjMjXYx9c=
+			</data>
+		</dict>
+		<key>down.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5fixDXvyup/6MJXk5HQYqqruzyRRXkMBfLXPXpQhxUA=
+			</data>
+		</dict>
+		<key>face.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VmWu8ly3WU+MujjX8vzwu5R4a2h3j7PMtPEYYW9QyWY=
+			</data>
+		</dict>
 		<key>icon.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -482,6 +538,27 @@
 			<key>hash2</key>
 			<data>
 			eHWOjJUlWCQc0jjZsmP37WtEMEPAS7FP2eG+y14xSTs=
+			</data>
+		</dict>
+		<key>save.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HFpUGu1TsqqgldX/cWu/T8tqBd1eklifFGRzmJNSvKs=
+			</data>
+		</dict>
+		<key>share.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FXkW6ibfIRlfXqa/1FQQ7kFJLUwxtc79MdWXugPms7E=
+			</data>
+		</dict>
+		<key>up.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ff4T2X33+AxHzvxRN5HZBl/F0gLx73DM2kvrW1ZWwJU=
 			</data>
 		</dict>
 	</dict>
