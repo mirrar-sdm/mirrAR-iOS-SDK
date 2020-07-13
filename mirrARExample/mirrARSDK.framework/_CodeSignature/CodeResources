@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Rm8y7a6uvhdooPLoq2ML2Z8hLLk=
+		iQ/vK4S7Kh60TxdTH37nroqFbag=
 		</data>
 		<key>FontAwesome.ttf</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/HandTracker.framework/HandTracker</key>
 		<data>
-		HfD+n2pOWvzK/Q2Ti3bxlVyHR2c=
+		0ggrRa5TkyYclGA7l/vxzVXptI0=
 		</data>
 		<key>Frameworks/HandTracker.framework/Info.plist</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		swNZcnCFGkbCL/PFgfdNN3tPbcw=
+		6G2aOK09qArU8r5iOMI31xR35k0=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>Main.storyboardc/MARCameraViewController.nib</key>
 		<data>
-		IWp05Xru8W/m7cfFwGEbRRQrDOQ=
+		gKYZNlt0+dRkoeDNiSKHwVp/4lU=
 		</data>
 		<key>Main.storyboardc/UINavigationController-x5b-eK-u4J.nib</key>
 		<data>
-		hbe/S5wD5a/cHga/7RhGPlrXbnU=
+		vyzR9LEAV4tDa/d//Kt+Pjk+Xhs=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sn9Uk9jE1asTrhAW5tFu14LLRHtJO6STslwgrDXyCsg=
+			cYJum1ksZiB7HeORE4VLmPngS8wrZrNPRcs8h6h4a4o=
 			</data>
 		</dict>
 		<key>FontAwesome.ttf</key>
@@ -229,7 +229,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z2xNZxeAfGseW+NTCASqk6tDAt2bAuy4lzgVGIZ+e2s=
+			dd4A1M7pAhomk08IVD0kv5uK42PTbslv2kpbWP3EYyk=
 			</data>
 		</dict>
 		<key>Frameworks/HandTracker.framework/Info.plist</key>
@@ -432,7 +432,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1DJ6S8d+xbMMxYqrrVAwOlxkjIqhxBeVNzThyHPLJxE=
+			UIuZ7qXoXUgbfL2XA5QerUIAhQLHa0SuqdQWvEI8JiU=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
@@ -446,14 +446,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R+HJh6U+B1k/+Bpjl5MdjUIMYVkOafZ+PlOn8yiiomY=
+			+AH6bElsy52IYMglLgyXMNPY+ZeBfPZ6MZNpeWIBWso=
 			</data>
 		</dict>
 		<key>Main.storyboardc/UINavigationController-x5b-eK-u4J.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3/M+xn+YroiKGBi/OAvEBYhahekjZXt88hDJU6ln1TA=
+			j7XE2fhOee7Z4DNhl1B3+W783GTvAlKe3CLbz+V8UYI=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>

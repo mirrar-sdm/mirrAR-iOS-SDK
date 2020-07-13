@@ -14,8 +14,8 @@
 		44071BF524B96C0D002F47AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF424B96C0D002F47AA /* Assets.xcassets */; };
 		44071BF824B96C0D002F47AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */; };
 		44071BFB24B96C0D002F47AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44071BFA24B96C0D002F47AA /* main.m */; };
-		EB24DBE024BC7A2A0066ECA6 /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB24DBDE24BC7A230066ECA6 /* mirrARSDK.framework */; };
-		EB24DBE124BC7A2A0066ECA6 /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB24DBDE24BC7A230066ECA6 /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBD0783C24BC8F6E00A91258 /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD0783A24BC8F6900A91258 /* mirrARSDK.framework */; };
+		EBD0783D24BC8F6E00A91258 /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD0783A24BC8F6900A91258 /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EB24DBE124BC7A2A0066ECA6 /* mirrARSDK.framework in Embed Frameworks */,
+				EBD0783D24BC8F6E00A91258 /* mirrARSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 		44071BF724B96C0D002F47AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44071BF924B96C0D002F47AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44071BFA24B96C0D002F47AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EB24DBDE24BC7A230066ECA6 /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
+		EBD0783A24BC8F6900A91258 /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB24DBE024BC7A2A0066ECA6 /* mirrARSDK.framework in Frameworks */,
+				EBD0783C24BC8F6E00A91258 /* mirrARSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 				44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */,
 				44071BF924B96C0D002F47AA /* Info.plist */,
 				44071BFA24B96C0D002F47AA /* main.m */,
-				EB24DBDE24BC7A230066ECA6 /* mirrARSDK.framework */,
+				EBD0783A24BC8F6900A91258 /* mirrARSDK.framework */,
 			);
 			path = mirrARExample;
 			sourceTree = "<group>";

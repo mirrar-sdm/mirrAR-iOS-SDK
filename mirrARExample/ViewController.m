@@ -46,7 +46,8 @@
                                  @"password": @"brand password here",
                                  @"type": @"ios_sdk"
     };
-        
+    
+
     
     
     //Initialize SDK
@@ -54,7 +55,6 @@
     self.camera.productData = options;
     self.camera.loginParams = loginParam;
     [self.navigationController pushViewController:self.camera animated:NO];
-    
 }
 
 
