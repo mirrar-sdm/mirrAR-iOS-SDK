@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Mfg8cCYefJW4xILWdg5CHM2YiBs=
+		Rm8y7a6uvhdooPLoq2ML2Z8hLLk=
 		</data>
 		<key>FontAwesome.ttf</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/HandTracker.framework/HandTracker</key>
 		<data>
-		0Hd11uQo8qQ/sK8oVDPH0PI9KQs=
+		HfD+n2pOWvzK/Q2Ti3bxlVyHR2c=
 		</data>
 		<key>Frameworks/HandTracker.framework/Info.plist</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		y5xuLm6lbPV1kIrKvkfpfAVKdzQ=
+		IYaYcsMDcpIaaBnE27zgH3c8J3E=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		JWr9Zsbw3QvvSsJ5plvH95d6Jww=
+		swNZcnCFGkbCL/PFgfdNN3tPbcw=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>Main.storyboardc/MARCameraViewController.nib</key>
 		<data>
-		roKokVNhIoNvy8glSzQZSwyre2A=
+		IWp05Xru8W/m7cfFwGEbRRQrDOQ=
 		</data>
 		<key>Main.storyboardc/UINavigationController-x5b-eK-u4J.nib</key>
 		<data>
-		Zq2N6dwT5pdozjzaolae9XPXUbQ=
+		hbe/S5wD5a/cHga/7RhGPlrXbnU=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dltrxk6nbi3ygzwsi+7Cz12LTSNGSedDVO5qOSVhwkE=
+			sn9Uk9jE1asTrhAW5tFu14LLRHtJO6STslwgrDXyCsg=
 			</data>
 		</dict>
 		<key>FontAwesome.ttf</key>
@@ -229,7 +229,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xRyNk6lBgip3g4Jl70H2R+JG2nO2e4HzSsdbatl+FgQ=
+			Z2xNZxeAfGseW+NTCASqk6tDAt2bAuy4lzgVGIZ+e2s=
 			</data>
 		</dict>
 		<key>Frameworks/HandTracker.framework/Info.plist</key>
@@ -306,7 +306,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3o8gxb6bKWL588ENLs5Uq93uVkuQZKnobQ+IpsbI0vg=
+			CAub4zHuXL16m45JfrfM9319h9t+OeFrXp67hBFltjU=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -432,7 +432,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ONIVojdhR/7YG4ZKMmCiq9+QnAxLB0F0n4DWWbUc7Uw=
+			1DJ6S8d+xbMMxYqrrVAwOlxkjIqhxBeVNzThyHPLJxE=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
@@ -446,14 +446,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XhNsygTb8UWgtW7DeD4pwbmfS9u2160zai5jHsO3c8s=
+			R+HJh6U+B1k/+Bpjl5MdjUIMYVkOafZ+PlOn8yiiomY=
 			</data>
 		</dict>
 		<key>Main.storyboardc/UINavigationController-x5b-eK-u4J.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e62Tp77jBymjuOOALEtYo5pS+Cy8fBztDxxxrxo3Egs=
+			3/M+xn+YroiKGBi/OAvEBYhahekjZXt88hDJU6ln1TA=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
