@@ -14,7 +14,7 @@
 @property (nonatomic, strong) UICollectionView *carousel;
 @property (nonatomic, strong) UISegmentedControl *segmentControl;
 @property (nonatomic, strong) UIScrollView *scrollView;
-@property (nonatomic, weak) id<MARPickerViewDelegate> delegate;
+@property (nonatomic, strong) id<MARPickerViewDelegate> delegate;
 
 @property (nonatomic) int screenState;
 
