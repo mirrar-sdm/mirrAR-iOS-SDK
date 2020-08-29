@@ -58,6 +58,7 @@ Step 4 -
 2. Minimum iOS version Tested is iOS 12 & Supported version is iOS 10.
 3. iOS simulator is not supported (obviously) because it doesn't have a camera. You need an physical iOS device to implement the SDK.
 4. Expect lower camera resolution/fps on older devices like iPhone 7.
+5. Internet access is required.
 
 # License validity along with active product codes & types supported can be determined from this API -
 curl --location --request POST 'https://mirrar.styledotme.com/api/v2/login' \
