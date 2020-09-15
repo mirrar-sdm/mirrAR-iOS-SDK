@@ -14,18 +14,18 @@
 		44071BF524B96C0D002F47AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF424B96C0D002F47AA /* Assets.xcassets */; };
 		44071BF824B96C0D002F47AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */; };
 		44071BFB24B96C0D002F47AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44071BFA24B96C0D002F47AA /* main.m */; };
-		EB38A995250F7534006DF5A9 /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB38A993250F749D006DF5A9 /* mirrARSDK.framework */; };
-		EB38A996250F7534006DF5A9 /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB38A993250F749D006DF5A9 /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB38A9B225108960006DF5A9 /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB38A9B025108939006DF5A9 /* mirrARSDK.framework */; };
+		EB38A9B325108960006DF5A9 /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB38A9B025108939006DF5A9 /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		44071C0524B96C4D002F47AA /* Embed Frameworks */ = {
+		EB38A9A1250FF82C006DF5A9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EB38A996250F7534006DF5A9 /* mirrARSDK.framework in Embed Frameworks */,
+				EB38A9B325108960006DF5A9 /* mirrARSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 		44071BF724B96C0D002F47AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44071BF924B96C0D002F47AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44071BFA24B96C0D002F47AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EB38A993250F749D006DF5A9 /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
+		EB38A9B025108939006DF5A9 /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB38A995250F7534006DF5A9 /* mirrARSDK.framework in Frameworks */,
+				EB38A9B225108960006DF5A9 /* mirrARSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 				44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */,
 				44071BF924B96C0D002F47AA /* Info.plist */,
 				44071BFA24B96C0D002F47AA /* main.m */,
-				EB38A993250F749D006DF5A9 /* mirrARSDK.framework */,
+				EB38A9B025108939006DF5A9 /* mirrARSDK.framework */,
 			);
 			path = mirrARExample;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 				44071BE124B96C0A002F47AA /* Sources */,
 				44071BE224B96C0A002F47AA /* Frameworks */,
 				44071BE324B96C0A002F47AA /* Resources */,
-				44071C0524B96C4D002F47AA /* Embed Frameworks */,
+				EB38A9A1250FF82C006DF5A9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +317,7 @@
 					"$(PROJECT_DIR)/mirrARExample",
 				);
 				INFOPLIST_FILE = mirrARExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +340,7 @@
 					"$(PROJECT_DIR)/mirrARExample",
 				);
 				INFOPLIST_FILE = mirrARExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
