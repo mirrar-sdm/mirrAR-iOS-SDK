@@ -42,13 +42,11 @@
                 }
         }
     };
+    
     NSDictionary *loginParam = @{@"username": @"brand username here",
                                  @"password": @"brand password here",
                                  @"type": @"ios_sdk"
     };
-    
-
-    
     
     //Initialize SDK
     self.camera = [MARCameraViewController sharedInstance];
