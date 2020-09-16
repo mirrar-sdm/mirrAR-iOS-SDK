@@ -25,5 +25,6 @@
 @protocol MARPickerViewDelegate <NSObject>
 - (void)pickerViewWillUpdateCurrentItem;
 - (void)pickerViewDidUpdateCurrentItem;
+- (void)dismissCameraController;
 
 @end
