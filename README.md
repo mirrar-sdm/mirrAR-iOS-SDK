@@ -55,7 +55,7 @@ Step 4 -
 
 # Notes
 1. The framework size is 29.9Mb.
-2. Minimum iOS version Tested is iOS 12 & Supported version is iOS 9.
+2. Minimum iOS version Tested is iOS 12 & Supported version is iOS 11.
 3. iOS simulator is not supported (obviously) because it doesn't have a camera. You need an physical iOS device to implement the SDK & compile the project.
 4. Expect lower camera resolution/fps on older devices like iPhone 7.
 5. Internet access is required.
