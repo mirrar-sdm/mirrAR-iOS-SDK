@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"mirrAR SDK";
+    
     NSDictionary *options =  @{
         @"productData": @{
                 @"Necklaces": @{
@@ -52,7 +54,14 @@
     self.camera = [MARCameraViewController sharedInstance];
     self.camera.productData = options;
     self.camera.loginParams = loginParam;
-    [self.navigationController pushViewController:self.camera animated:NO];
+}
+
+- (IBAction)launchSDK:(id)sender {
+    //Present
+    self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    [self.navigationController presentViewController:self.camera animated:YES completion:nil];
+    //Or Push
+//    [self.navigationController pushViewController:self.camera animated:YES];
 }
 
 

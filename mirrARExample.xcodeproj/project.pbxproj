@@ -14,8 +14,8 @@
 		44071BF524B96C0D002F47AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF424B96C0D002F47AA /* Assets.xcassets */; };
 		44071BF824B96C0D002F47AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */; };
 		44071BFB24B96C0D002F47AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44071BFA24B96C0D002F47AA /* main.m */; };
-		EB38A9BB251094C7006DF5A9 /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB38A9B9251094B2006DF5A9 /* mirrARSDK.framework */; };
-		EB38A9BC251094C7006DF5A9 /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB38A9B9251094B2006DF5A9 /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB368D2425121A710035C42F /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB368D2225121A6C0035C42F /* mirrARSDK.framework */; };
+		EB368D2525121A710035C42F /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB368D2225121A6C0035C42F /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EB38A9BC251094C7006DF5A9 /* mirrARSDK.framework in Embed Frameworks */,
+				EB368D2525121A710035C42F /* mirrARSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 		44071BF724B96C0D002F47AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44071BF924B96C0D002F47AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44071BFA24B96C0D002F47AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EB38A9B9251094B2006DF5A9 /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
+		EB368D2225121A6C0035C42F /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB38A9BB251094C7006DF5A9 /* mirrARSDK.framework in Frameworks */,
+				EB368D2425121A710035C42F /* mirrARSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 				44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */,
 				44071BF924B96C0D002F47AA /* Info.plist */,
 				44071BFA24B96C0D002F47AA /* main.m */,
-				EB38A9B9251094B2006DF5A9 /* mirrARSDK.framework */,
+				EB368D2225121A6C0035C42F /* mirrARSDK.framework */,
 			);
 			path = mirrARExample;
 			sourceTree = "<group>";
@@ -122,7 +122,7 @@
 		44071BDD24B96C0A002F47AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = mirrARSDK;
 				TargetAttributes = {
 					44071BE424B96C0A002F47AA = {
@@ -221,6 +221,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -279,6 +280,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -325,6 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sdk.mirrARSDK.mirrARExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7s";
 			};
 			name = Debug;
 		};
@@ -348,6 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sdk.mirrARSDK.mirrARExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7s";
 			};
 			name = Release;
 		};
