@@ -44,11 +44,12 @@
                 }
         }
     };
-    
+
     NSDictionary *loginParam = @{@"username": @"brand username here",
                                  @"password": @"brand password here",
                                  @"type": @"ios_sdk"
     };
+    
     
     //Initialize SDK
     self.camera = [MARCameraViewController sharedInstance];
@@ -57,11 +58,8 @@
 }
 
 - (IBAction)launchSDK:(id)sender {
-    //Present
     self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
     [self.navigationController presentViewController:self.camera animated:YES completion:nil];
-    //Or Push
-//    [self.navigationController pushViewController:self.camera animated:YES];
 }
 
 
