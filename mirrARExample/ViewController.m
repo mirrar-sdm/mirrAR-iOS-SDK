@@ -50,7 +50,6 @@
                                  @"type": @"ios_sdk"
     };
     
-    
     //Initialize SDK
     self.camera = [MARCameraViewController sharedInstance];
     self.camera.productData = options;
