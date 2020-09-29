@@ -54,17 +54,24 @@ Step 4 -
 ```
 
 # Notes
-1. The framework size is 201 KB.
-2. Minimum iOS version Tested is iOS 11 & Supported version is iOS 9.
+1. The framework size is 29.9Mb.
+2. Minimum iOS version Tested is iOS 12 & Supported version is iOS 11.
 3. iOS simulator is not supported (obviously) because it doesn't have a camera. You need an physical iOS device to implement the SDK & compile the project.
 4. Expect lower camera resolution/fps on older devices like iPhone 7.
 5. Internet access is required.
+6. App needs to have camera permission key in info.plist
+```
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Need library access to save & share images!</string>
+<key>NSCameraUsageDescription</key> 
+<string>Need camera access for augmented reality!</string>
+```
 
 # License validity along with active product codes & types supported can be determined from this API -
 curl --location --request POST 'https://mirrar.styledotme.com/api/v2/login' \
 --form 'username=/*login ID*/' \
 --form 'password=/*password*/' \
---form 'type=ios_sdk'
+--form 'type=android_sdk'
 
 ```
 {
