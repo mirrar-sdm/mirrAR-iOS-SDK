@@ -4,3 +4,8 @@ framework module mirrARSDK {
   export *
   module * { export * }
 }
+
+module mirrARSDK.Swift {
+    header "mirrARSDK-Swift.h"
+    requires objc
+}
