@@ -11,10 +11,7 @@
 
 #import "ObjectManager.h"
 
-@interface MARCameraViewController : UIViewController {
-    BOOL isSafariPresented;
-    UIActivityIndicatorView *activityIndicator;
-}
+@interface MARCameraViewController : UIViewController
 
 // Init Property
 @property (nonatomic, strong) NSString *brandID;
