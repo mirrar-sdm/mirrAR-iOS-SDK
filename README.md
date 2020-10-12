@@ -46,6 +46,7 @@ Step 3 -
     self.camera = [MARCameraViewController sharedInstance];
     self.camera.productData = options;
     self.camera.loginParams = loginParam;
+    [self.camera configure];
 ```
 
 Step 4 -
