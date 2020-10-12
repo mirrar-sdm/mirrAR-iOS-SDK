@@ -54,6 +54,7 @@
     self.camera = [MARCameraViewController sharedInstance];
     self.camera.productData = options;
     self.camera.loginParams = loginParam;
+    [self.camera configure];
 }
 
 - (IBAction)launchSDK:(id)sender {
