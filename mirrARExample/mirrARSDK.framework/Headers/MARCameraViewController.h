@@ -23,5 +23,5 @@
 @property (nonatomic, strong) MARPickerView *pickerOverlayView;
 
 + (MARCameraViewController*)sharedInstance;
-
+- (void)configure;
 @end
