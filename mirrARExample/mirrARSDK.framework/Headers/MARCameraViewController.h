@@ -11,9 +11,12 @@
 
 #import "ObjectManager.h"
 
-@interface MARCameraViewController : UIViewController {
+@interface MARCameraViewController : UIViewController <SFSafariViewControllerDelegate>
+{
     BOOL isSafariPresented;
     UIActivityIndicatorView *activityIndicator;
+    UIButton *backButton2;
+    UIButton *backButton;
 }
 
 // Init Property
