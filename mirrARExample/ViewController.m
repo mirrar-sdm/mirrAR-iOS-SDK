@@ -19,6 +19,9 @@
     [super viewDidLoad];
     
     self.title = @"mirrAR SDK";
+}
+
+- (IBAction)launchSDK:(id)sender {
     
     NSDictionary *options =  @{
         @"productData": @{
@@ -44,7 +47,7 @@
                 }
         }
     };
-    
+
     NSDictionary *loginParam = @{@"username": @"brand username here",
                                  @"password": @"brand password here",
                                  @"type": @"ios_sdk"
@@ -55,9 +58,6 @@
     self.camera.productData = options;
     self.camera.loginParams = loginParam;
     [self.camera configure];
-}
-
-- (IBAction)launchSDK:(id)sender {
     //Present
     self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
     [self.navigationController presentViewController:self.camera animated:YES completion:nil];
