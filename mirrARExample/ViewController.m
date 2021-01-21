@@ -23,7 +23,7 @@
     NSDictionary *options =  @{
         @"productData": @{
                 @"Necklaces": @{
-                        @"items": @[@"1", @"2", @"3"],
+                        @"items": @[@"M5", @"2", @"3"],
                         @"type": @"neck"
                 },
                 @"Earrings": @{
@@ -45,8 +45,8 @@
         }
     };
 
-    NSDictionary *loginParam = @{@"username": @"brand username here",
-                                 @"password": @"brand password here",
+    NSDictionary *loginParam = @{@"username": @"rajdhani-jewellers-ar",
+                                 @"password": @"9999",
                                  @"type": @"ios_sdk"
     };
     
