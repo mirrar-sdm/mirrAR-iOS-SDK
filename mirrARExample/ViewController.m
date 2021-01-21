@@ -45,8 +45,8 @@
         }
     };
 
-    NSDictionary *loginParam = @{@"username": @"rajdhani-jewellers-ar",
-                                 @"password": @"9999",
+    NSDictionary *loginParam = @{@"username": @"username here",
+                                 @"password": @"password here",
                                  @"type": @"ios_sdk"
     };
     
