@@ -8,15 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import <SafariServices/SafariServices.h>
+#import <WebKit/WebKit.h>
 
 #import "ObjectManager.h"
 
-@interface MARCameraViewController : UIViewController <SFSafariViewControllerDelegate>
+@interface MARCameraViewController : UIViewController <SFSafariViewControllerDelegate, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler, UIDocumentInteractionControllerDelegate>
 {
     BOOL isSafariPresented;
     UIActivityIndicatorView *activityIndicator;
     UIButton *backButton2;
     UIButton *backButton;
+    WKWebView *wkWebView;
+    NSString *messageHandler;
+    UIDocumentInteractionController * documentInteractionController;
 }
 
 // Init Property
@@ -26,4 +30,5 @@
 @property (nonatomic, strong) NSDictionary *loginParams;
 
 + (MARCameraViewController*)sharedInstance;
+
 @end
