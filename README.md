@@ -66,6 +66,9 @@ Step 4 -
 <string>Need library access to save & share images!</string>
 <key>NSCameraUsageDescription</key> 
 <string>Need camera access for augmented reality!</string>
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>We need to access to your gallery to save your AR photos!</string>
+
 ```
 
 # License validity along with active product codes & types supported can be determined from this API -
