@@ -12,6 +12,18 @@
 
 #import "ObjectManager.h"
 
+
+@protocol MARCameraViewControllerDelegate <NSObject>
+@optional
+- (void)didTapDownloadFor:(UIImage *)image;
+- (void)didTapWhatsappToShare:(UIImage *)image;
+- (void)didTapShareFor:(UIImage *)image;
+- (void)didTapDetailsFor:(NSString *)productCode;
+- (void)didTapWishlistFor:(NSString *)productCode;
+- (void)didTapCartFor:(NSString *)productCode;
+
+@end
+
 @interface MARCameraViewController : UIViewController <SFSafariViewControllerDelegate, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler, UIDocumentInteractionControllerDelegate>
 {
     BOOL isSafariPresented;
@@ -28,6 +40,8 @@
 @property (nonatomic, strong) NSString *brandName;
 @property (nonatomic, strong) NSDictionary *productData;
 @property (nonatomic, strong) NSDictionary *loginParams;
+
+@property (nonatomic, strong) id <MARCameraViewControllerDelegate> delegate;
 
 + (MARCameraViewController*)sharedInstance;
 
