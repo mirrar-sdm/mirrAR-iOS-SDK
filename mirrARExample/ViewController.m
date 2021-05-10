@@ -8,9 +8,8 @@
 
 #import "ViewController.h"
 #import <mirrARSDK/MARCameraViewController.h>
-#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController () <MARCameraViewControllerDelegate>
+@interface ViewController ()
 @property (strong, nonatomic) MARCameraViewController *camera;
 @end
 
@@ -23,47 +22,7 @@
 }
 
 - (IBAction)launchSDK:(id)sender {
-    if (@available(iOS 14.3, *)) {
-        [self checkCameraAuthorization];
-    } else {
-        [self launchMirrarSDK];
-    }
-}
 
--(void) checkCameraAuthorization {
-    AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-    if(status == AVAuthorizationStatusAuthorized) { // authorized
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self launchMirrarSDK];
-        });
-    } else if(status == AVAuthorizationStatusDenied){ // denied
-        if ([AVCaptureDevice respondsToSelector:@selector(requestAccessForMediaType: completionHandler:)]) {
-            [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-                if (granted) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        [self launchMirrarSDK];
-                    });
-                } else {
-                    // Permission has been denied.
-                    NSLog(@"DENIED");
-                }
-            }];
-        }
-    } else if(status == AVAuthorizationStatusRestricted){ // restricted
-    } else if(status == AVAuthorizationStatusNotDetermined){ // not determined
-        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-            if(granted){ // Access has been granted ..do something
-                NSLog(@"camera authorized");
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self launchMirrarSDK];
-                });
-            } else { // Access denied ..do something
-            }
-        }];
-    }
-}
-
-- (void)launchMirrarSDK {
     NSDictionary *options =  @{
         @"productData": @{
                 @"Necklaces": @{
@@ -88,7 +47,7 @@
                 }
         }
     };
-    
+
     NSDictionary *loginParam = @{@"username": @"username here",
                                  @"password": @"password here",
                                  @"type": @"ios_sdk"
@@ -96,38 +55,12 @@
 
     //Initialize SDK
     self.camera = [MARCameraViewController sharedInstance];
-    self.camera.delegate = self;
     self.camera.productData = options;
     self.camera.loginParams = loginParam;
+    [self.camera configure];
     self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
-    [self.navigationController presentViewController:self.camera animated:YES completion:nil];
+    [self presentViewController:self.camera animated:NO completion:nil];
 }
 
-
-#pragma mark: MARCameraViewControllerDelegate methods
-
-- (void)didTapDownloadFor:(UIImage *)image {
-    NSLog(@"didTapDownloadFor");
-}
-
-- (void)didTapWhatsappToShare:(UIImage *)image {
-    NSLog(@"didTapWhatsappToShare");
-}
-
-- (void)didTapShareFor:(UIImage *)image {
-    NSLog(@"didTapShareFor");
-}
-
-- (void)didTapDetailsFor:(NSString *)productCode {
-    NSLog(@"didTapDetailsFor->%@", productCode);
-}
-
-- (void)didTapWishlistFor:(NSString *)productCode {
-    NSLog(@"didTapWishlistFor->%@", productCode);
-}
-
-- (void)didTapCartFor:(NSString *)productCode {
-    NSLog(@"didTapCartFor->%@", productCode);
-}
 
 @end

@@ -7,32 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SafariServices/SafariServices.h>
-#import <WebKit/WebKit.h>
+#import "MARPickerView.h"
 
 
-
-@protocol MARCameraViewControllerDelegate <NSObject>
-@optional
-- (void)didTapDownloadFor:(UIImage *)image;
-- (void)didTapWhatsappToShare:(UIImage *)image;
-- (void)didTapShareFor:(UIImage *)image;
-- (void)didTapDetailsFor:(NSString *)productCode;
-- (void)didTapWishlistFor:(NSString *)productCode;
-- (void)didTapCartFor:(NSString *)productCode;
-
-@end
-
-@interface MARCameraViewController : UIViewController <SFSafariViewControllerDelegate, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler, UIDocumentInteractionControllerDelegate>
-{
-    BOOL isSafariPresented;
-    UIActivityIndicatorView *activityIndicator;
-    UIButton *backButton2;
-    UIButton *backButton;
-    WKWebView *wkWebView;
-    NSString *messageHandler;
-    UIDocumentInteractionController * documentInteractionController;
-}
+@interface MARCameraViewController : UIViewController<MARPickerViewDelegate>
 
 // Init Property
 @property (nonatomic, strong) NSString *brandID;
@@ -40,8 +18,10 @@
 @property (nonatomic, strong) NSDictionary *productData;
 @property (nonatomic, strong) NSDictionary *loginParams;
 
-@property (nonatomic, strong) id <MARCameraViewControllerDelegate> delegate;
+// Tools
+@property (nonatomic) BOOL showsDots;
+@property (nonatomic, strong) MARPickerView *pickerOverlayView;
 
 + (MARCameraViewController*)sharedInstance;
-
+- (void)configure;
 @end
