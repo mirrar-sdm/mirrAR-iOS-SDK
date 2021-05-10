@@ -2,15 +2,14 @@
 //  MARCameraViewController.h
 //  mirrAR
 //
-//  Created by Akhil Tolani on 24/09/20.
-//  Copyright © 2020 mirrARSDK. All rights reserved.
+//  Created by Akhil Tolani on 05/09/17.
+//  Copyright © 2017 StyleDotMe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <SafariServices/SafariServices.h>
 #import <WebKit/WebKit.h>
 
-#import "ObjectManager.h"
 
 
 @protocol MARCameraViewControllerDelegate <NSObject>
