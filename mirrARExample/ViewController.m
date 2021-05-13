@@ -67,7 +67,7 @@
     NSDictionary *options =  @{
         @"productData": @{
                 @"Necklaces": @{
-                        @"items": @[@"M5", @"2", @"3"],
+                        @"items": @[@"1", @"2", @"3"],
                         @"type": @"neck"
                 },
                 @"Earrings": @{
@@ -128,6 +128,14 @@
 
 - (void)didTapCartFor:(NSString *)productCode {
     NSLog(@"didTapCartFor->%@", productCode);
+}
+
+- (void)didTapRemoveCartFor:(NSString *)productCode {
+    NSLog(@"didTapRemoveCartFor->%@", productCode);
+}
+
+- (void)didTapUnWishlistFor:(NSString *)productCode {
+    NSLog(@"didTapUnWishlistFor->%@", productCode);
 }
 
 @end

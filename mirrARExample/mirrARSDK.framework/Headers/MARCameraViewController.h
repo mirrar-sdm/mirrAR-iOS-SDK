@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import <SafariServices/SafariServices.h>
 #import <WebKit/WebKit.h>
-
 
 
 @protocol MARCameraViewControllerDelegate <NSObject>
@@ -20,6 +20,8 @@
 - (void)didTapDetailsFor:(NSString *)productCode;
 - (void)didTapWishlistFor:(NSString *)productCode;
 - (void)didTapCartFor:(NSString *)productCode;
+- (void)didTapRemoveCartFor:(NSString *)productCode;
+- (void)didTapUnWishlistFor:(NSString *)productCode;
 
 @end
 
