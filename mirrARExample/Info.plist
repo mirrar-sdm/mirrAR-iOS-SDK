@@ -15,9 +15,9 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
@@ -72,11 +72,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>We need to access to your gallery to save your AR photos!</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>We need access to your gallery to show your AR photos!</string>
-    <key>NSCameraUsageDescription</key>
-    <string>We need access to your camera to show jewelry on your face and improve your AR experience!</string>
 </dict>
 </plist>
