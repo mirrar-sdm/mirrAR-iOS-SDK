@@ -7,7 +7,8 @@
 # Initialisation
 Step 1 -
 ```
-    NSDictionary *options =  @{
+        NSDictionary *productData =  @{
+        @"brandId": @"your-brand-id-here",
         @"productData": @{
                 @"Necklaces": @{
                         @"items": @[@"1", @"2", @"3"],
@@ -35,21 +36,12 @@ Step 1 -
 
 Step 2 -
 ```
-    NSDictionary *loginParam = @{@"username": @"brand username here",
-                                 @"password": @"brand password here",
-                                 @"type": @"ios_sdk"
-    };
-```
-
-Step 3 -
-```
     self.camera = [MARCameraViewController sharedInstance];
-    self.camera.productData = options;
-    self.camera.loginParams = loginParam;
+    self.camera.productData = productData;
     [self.camera configure];
 ```
 
-Step 4 -
+Step 3 -
 ```
     [self.navigationController pushViewController:self.camera animated:NO];
 ```
