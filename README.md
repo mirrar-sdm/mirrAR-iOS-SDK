@@ -7,7 +7,8 @@
 # Initialisation
 Step 1 -
 ```
-    NSDictionary *options =  @{
+        NSDictionary *productData =  @{
+        @"brandId": @"your-brand-id-here",
         @"productData": @{
                 @"Necklaces": @{
                         @"items": @[@"1", @"2", @"3"],
@@ -35,23 +36,52 @@ Step 1 -
 
 Step 2 -
 ```
-    NSDictionary *loginParam = @{@"username": @"brand username here",
-                                 @"password": @"brand password here",
-                                 @"type": @"ios_sdk"
-    };
+    self.camera = [MARCameraViewController sharedInstance];
+    self.camera.delegate = self;
+    self.camera.productData = productData;
 ```
 
 Step 3 -
 ```
-    self.camera = [MARCameraViewController sharedInstance];
-    self.camera.productData = options;
-    self.camera.loginParams = loginParam;
-    [self.camera configure];
+     self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    [self.navigationController presentViewController:self.camera animated:YES completion:nil];
+
 ```
 
-Step 4 -
+Step 4 - Implement delegate methods (Optional)
 ```
-    [self.navigationController pushViewController:self.camera animated:NO];
+- (void)didTapDownloadFor:(UIImage *)image {
+    NSLog(@"didTapDownloadFor");
+}
+
+- (void)didTapWhatsappToShare:(UIImage *)image {
+    NSLog(@"didTapWhatsappToShare");
+}
+
+- (void)didTapShareFor:(UIImage *)image {
+    NSLog(@"didTapShareFor");
+}
+
+- (void)didTapDetailsFor:(NSString *)productCode {
+    NSLog(@"didTapDetailsFor->%@", productCode);
+}
+
+- (void)didTapWishlistFor:(NSString *)productCode {
+    NSLog(@"didTapWishlistFor->%@", productCode);
+}
+
+- (void)didTapCartFor:(NSString *)productCode {
+    NSLog(@"didTapCartFor->%@", productCode);
+}
+
+- (void)didTapRemoveCartFor:(NSString *)productCode {
+    NSLog(@"didTapRemoveCartFor->%@", productCode);
+}
+
+- (void)didTapUnWishlistFor:(NSString *)productCode {
+    NSLog(@"didTapUnWishlistFor->%@", productCode);
+}
+
 ```
 
 # Notes
