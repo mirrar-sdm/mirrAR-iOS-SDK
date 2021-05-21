@@ -64,7 +64,8 @@
 }
 
 - (void)launchMirrarSDK {
-    NSDictionary *options =  @{
+    NSDictionary *productData =  @{
+        @"brandId": @"your-brand-id-here",
         @"productData": @{
                 @"Necklaces": @{
                         @"items": @[@"1", @"2", @"3"],
@@ -88,17 +89,11 @@
                 }
         }
     };
-    
-    NSDictionary *loginParam = @{@"username": @"username here",
-                                 @"password": @"password here",
-                                 @"type": @"ios_sdk"
-    };
 
     //Initialize SDK
     self.camera = [MARCameraViewController sharedInstance];
     self.camera.delegate = self;
-    self.camera.productData = options;
-    self.camera.loginParams = loginParam;
+    self.camera.productData = productData;
     self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
     [self.navigationController presentViewController:self.camera animated:YES completion:nil];
 }

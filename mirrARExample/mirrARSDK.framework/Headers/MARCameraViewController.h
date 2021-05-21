@@ -38,9 +38,7 @@
 
 // Init Property
 @property (nonatomic, strong) NSString *brandID;
-@property (nonatomic, strong) NSString *brandName;
 @property (nonatomic, strong) NSDictionary *productData;
-@property (nonatomic, strong) NSDictionary *loginParams;
 
 @property (nonatomic, strong) id <MARCameraViewControllerDelegate> delegate;
 
