@@ -14,8 +14,8 @@
 		44071BF524B96C0D002F47AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF424B96C0D002F47AA /* Assets.xcassets */; };
 		44071BF824B96C0D002F47AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */; };
 		44071BFB24B96C0D002F47AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44071BFA24B96C0D002F47AA /* main.m */; };
-		EBF32EE72657DD8300C03CA8 /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF32EE52657DD6F00C03CA8 /* mirrARSDK.framework */; };
-		EBF32EE82657DD8300C03CA8 /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBF32EE52657DD6F00C03CA8 /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBAD13D4265B8FA00091C6EB /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAD13D2265B8F720091C6EB /* mirrARSDK.framework */; };
+		EBAD13D5265B8FA00091C6EB /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBAD13D2265B8F720091C6EB /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EBF32EE82657DD8300C03CA8 /* mirrARSDK.framework in Embed Frameworks */,
+				EBAD13D5265B8FA00091C6EB /* mirrARSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 		44071BF724B96C0D002F47AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44071BF924B96C0D002F47AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44071BFA24B96C0D002F47AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EBF32EE52657DD6F00C03CA8 /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
+		EBAD13D2265B8F720091C6EB /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF32EE72657DD8300C03CA8 /* mirrARSDK.framework in Frameworks */,
+				EBAD13D4265B8FA00091C6EB /* mirrARSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +88,9 @@
 				44071BF124B96C0A002F47AA /* Main.storyboard */,
 				44071BF424B96C0D002F47AA /* Assets.xcassets */,
 				44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */,
-				EBF32EE52657DD6F00C03CA8 /* mirrARSDK.framework */,
 				44071BF924B96C0D002F47AA /* Info.plist */,
 				44071BFA24B96C0D002F47AA /* main.m */,
+				EBAD13D2265B8F720091C6EB /* mirrARSDK.framework */,
 			);
 			path = mirrARExample;
 			sourceTree = "<group>";
