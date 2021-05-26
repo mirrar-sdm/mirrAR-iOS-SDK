@@ -14,8 +14,8 @@
 		44071BF524B96C0D002F47AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF424B96C0D002F47AA /* Assets.xcassets */; };
 		44071BF824B96C0D002F47AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */; };
 		44071BFB24B96C0D002F47AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44071BFA24B96C0D002F47AA /* main.m */; };
-		EBAD13D4265B8FA00091C6EB /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAD13D2265B8F720091C6EB /* mirrARSDK.framework */; };
-		EBAD13D5265B8FA00091C6EB /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBAD13D2265B8F720091C6EB /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB380217265E8035008B3852 /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB380215265E802E008B3852 /* mirrARSDK.framework */; };
+		EB380218265E8035008B3852 /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB380215265E802E008B3852 /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EBAD13D5265B8FA00091C6EB /* mirrARSDK.framework in Embed Frameworks */,
+				EB380218265E8035008B3852 /* mirrARSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 		44071BF724B96C0D002F47AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44071BF924B96C0D002F47AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44071BFA24B96C0D002F47AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EBAD13D2265B8F720091C6EB /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
+		EB380215265E802E008B3852 /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBAD13D4265B8FA00091C6EB /* mirrARSDK.framework in Frameworks */,
+				EB380217265E8035008B3852 /* mirrARSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 				44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */,
 				44071BF924B96C0D002F47AA /* Info.plist */,
 				44071BFA24B96C0D002F47AA /* main.m */,
-				EBAD13D2265B8F720091C6EB /* mirrARSDK.framework */,
+				EB380215265E802E008B3852 /* mirrARSDK.framework */,
 			);
 			path = mirrARExample;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9H39RMB9UU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -325,7 +325,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = sdk.mirrARSDK.mirrARExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9H39RMB9UU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -352,7 +352,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = sdk.mirrARSDK.mirrARExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
