@@ -92,45 +92,9 @@
 
     //Initialize SDK
     self.camera = [MARCameraViewController sharedInstance];
-    self.camera.delegate = self;
     self.camera.productData = productData;
     self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
     [self.navigationController presentViewController:self.camera animated:YES completion:nil];
-}
-
-
-#pragma mark: MARCameraViewControllerDelegate methods
-
-- (void)didTapDownloadFor:(UIImage *)image {
-    NSLog(@"didTapDownloadFor");
-}
-
-- (void)didTapWhatsappToShare:(UIImage *)image {
-    NSLog(@"didTapWhatsappToShare");
-}
-
-- (void)didTapShareFor:(UIImage *)image {
-    NSLog(@"didTapShareFor");
-}
-
-- (void)didTapDetailsFor:(NSString *)productCode {
-    NSLog(@"didTapDetailsFor->%@", productCode);
-}
-
-- (void)didTapWishlistFor:(NSString *)productCode {
-    NSLog(@"didTapWishlistFor->%@", productCode);
-}
-
-- (void)didTapCartFor:(NSString *)productCode {
-    NSLog(@"didTapCartFor->%@", productCode);
-}
-
-- (void)didTapRemoveCartFor:(NSString *)productCode {
-    NSLog(@"didTapRemoveCartFor->%@", productCode);
-}
-
-- (void)didTapUnWishlistFor:(NSString *)productCode {
-    NSLog(@"didTapUnWishlistFor->%@", productCode);
 }
 
 @end
