@@ -64,29 +64,31 @@
 }
 
 - (void)launchMirrarSDK {
-    NSDictionary *productData =  @{
-        @"brandId": @"your-brand-id-here",
+    
+    NSDictionary *productData = @{
+        @"brandId": @"brand-id-here",
         @"productData": @{
-                @"Necklaces": @{
+                @"Bracelets": @{
                         @"items": @[@"1", @"2", @"3"],
-                        @"type": @"neck"
+                        @"type": @"wrist"
                 },
                 @"Earrings": @{
-                        @"items": @[@"1", @"2"],
+                        @"items": @[@"1", @"2", @"3", @"4"],
                         @"type": @"ear"
                 },
-                @"Mangalsutras": @{
+                @"Rings": @{
                         @"items": @[@"1", @"2", @"3"],
+                        @"type": @"finger"
+                },
+                @"Sets": @{
+                        @"items": @[@"1"],
+                        @"type": @"set"
+                },
+                @"Necklaces": @{
+                        @"items": @[@"1", @"2"],
                         @"type": @"neck"
                 },
-                @"NecklaceSets": @{
-                        @"items": @[@"1", @"2"],
-                        @"type": @"set"
-                },
-                @"PendantSets": @{
-                        @"items": @[@"1", @"2"],
-                        @"type": @"set"
-                }
+                
         }
     };
 

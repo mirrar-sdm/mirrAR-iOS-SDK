@@ -10,7 +10,11 @@
 
 #import <SafariServices/SafariServices.h>
 #import <WebKit/WebKit.h>
+#import <AVKit/AVKit.h>
+#import "MARPickerView.h"
 
+
+#define DEGREES_TO_RADIANS(degrees)((M_PI * degrees)/180)
 
 @protocol MARCameraViewControllerDelegate <NSObject>
 @optional
@@ -25,7 +29,7 @@
 
 @end
 
-@interface MARCameraViewController : UIViewController <SFSafariViewControllerDelegate, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler, UIDocumentInteractionControllerDelegate>
+@interface MARCameraViewController : UIViewController <SFSafariViewControllerDelegate, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler, UIDocumentInteractionControllerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureMetadataOutputObjectsDelegate, MARPickerViewDelegate>
 {
     BOOL isSafariPresented;
     UIActivityIndicatorView *activityIndicator;
@@ -34,11 +38,16 @@
     WKWebView *wkWebView;
     NSString *messageHandler;
     UIDocumentInteractionController * documentInteractionController;
+
 }
 
 // Init Property
 @property (nonatomic, strong) NSString *brandID;
+@property (nonatomic, strong) NSString *brandName;
 @property (nonatomic, strong) NSDictionary *productData;
+
+@property (nonatomic) BOOL showsDots;
+@property (nonatomic, strong) MARPickerView *pickerOverlayView;
 
 @property (nonatomic, strong) id <MARCameraViewControllerDelegate> delegate;
 
