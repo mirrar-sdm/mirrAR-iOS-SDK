@@ -68,27 +68,14 @@
     NSDictionary *productData = @{
         @"brandId": @"brand-id-here",
         @"productData": @{
-                @"Bracelets": @{
-                        @"items": @[@"1", @"2", @"3"],
-                        @"type": @"wrist"
-                },
                 @"Earrings": @{
-                        @"items": @[@"1", @"2", @"3", @"4"],
+                        @"items": @[@"1", @"2"],
                         @"type": @"ear"
                 },
-                @"Rings": @{
-                        @"items": @[@"1", @"2", @"3"],
-                        @"type": @"finger"
-                },
-                @"Sets": @{
-                        @"items": @[@"1"],
-                        @"type": @"set"
-                },
-                @"Necklaces": @{
-                        @"items": @[@"1", @"2"],
-                        @"type": @"neck"
-                },
-                
+                @"Necklaces": @ {
+                    @"items": @[@"1", @"2"],
+                    @"type": @"neck"
+                }
         }
     };
 
