@@ -48,12 +48,13 @@ Step 3 -
 ```
 
 # Notes
-1. The framework size is 29.9Mb.
-2. Minimum iOS version Tested is iOS 12 & Supported version is iOS 11.
-3. iOS simulator is not supported (obviously) because it doesn't have a camera. You need an physical iOS device to implement the SDK & compile the project.
-4. Expect lower camera resolution/fps on older devices like iPhone 7.
-5. Internet access is required.
-6. App needs to have camera permission key in info.plist
+1. The framework size is under 3Mb.
+2. Minimum iOS version Tested is iOS 11.
+3. Earrings, Necklaces & Sets are supported for devices iOS 11 & above. Rings & Bracelets are supported for devices above iOS 13 & above.
+4. iOS simulator is not supported (obviously) because it doesn't have a camera. You need an physical iOS device to implement the SDK & compile the project.
+5. Expect lower camera resolution/fps on older devices like iPhone 7.
+6. Internet access is required.
+7. App needs to have camera permission key in info.plist
 ```
 <key>NSPhotoLibraryUsageDescription</key>
 <string>Need library access to save & share images!</string>
