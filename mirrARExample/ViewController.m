@@ -68,13 +68,25 @@
     NSDictionary *productData = @{
         @"brandId": @"brand-id-here",
         @"productData": @{
+                @"Necklaces": @{
+                        @"items": @[@"1", @"2", @"3"],
+                        @"type": @"neck"
+                },
                 @"Earrings": @{
                         @"items": @[@"1", @"2"],
                         @"type": @"ear"
                 },
-                @"Necklaces": @ {
-                    @"items": @[@"1", @"2"],
-                    @"type": @"neck"
+                @"Mangalsutras": @{
+                        @"items": @[@"1", @"2", @"3"],
+                        @"type": @"neck"
+                },
+                @"NecklaceSets": @{
+                        @"items": @[@"1", @"2"],
+                        @"type": @"set"
+                },
+                @"PendantSets": @{
+                        @"items": @[@"1", @"2"],
+                        @"type": @"set"
                 }
         }
     };
