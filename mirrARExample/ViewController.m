@@ -23,44 +23,7 @@
 }
 
 - (IBAction)launchSDK:(id)sender {
-    if (@available(iOS 14.3, *)) {
-        [self checkCameraAuthorization];
-    } else {
         [self launchMirrarSDK];
-    }
-}
-
--(void) checkCameraAuthorization {
-    AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-    if(status == AVAuthorizationStatusAuthorized) { // authorized
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self launchMirrarSDK];
-        });
-    } else if(status == AVAuthorizationStatusDenied){ // denied
-        if ([AVCaptureDevice respondsToSelector:@selector(requestAccessForMediaType: completionHandler:)]) {
-            [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-                if (granted) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        [self launchMirrarSDK];
-                    });
-                } else {
-                    // Permission has been denied.
-                    NSLog(@"DENIED");
-                }
-            }];
-        }
-    } else if(status == AVAuthorizationStatusRestricted){ // restricted
-    } else if(status == AVAuthorizationStatusNotDetermined){ // not determined
-        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-            if(granted){ // Access has been granted ..do something
-                NSLog(@"camera authorized");
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self launchMirrarSDK];
-                });
-            } else { // Access denied ..do something
-            }
-        }];
-    }
 }
 
 - (void)launchMirrarSDK {
@@ -91,11 +54,83 @@
         }
     };
 
+    
     //Initialize SDK
     self.camera = [MARCameraViewController sharedInstance];
+    self.camera.delegate = self;
     self.camera.productData = productData;
-    self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
-    [self.navigationController presentViewController:self.camera animated:YES completion:nil];
+    
+    //PUSH
+    [self.navigationController pushViewController:self.camera animated:NO];
+    //   OR
+    
+    //PRESENT
+    //    self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    //    [self.navigationController presentViewController:self.camera animated:YES completion:nil];
+}
+
+#pragma mark: MARCameraViewControllerDelegate methods
+
+- (void)didTapDownloadFor:(UIImage *)image {
+    NSLog(@"didTapDownloadForImage");
+    [self showAlert:@"didTapDownloadForImage"];
+}
+- (void)didTapWhatsappToShare:(UIImage *)image {
+    NSLog(@"didTapWhatsappToShareForImage");
+    [self showAlert:@"didTapWhatsappToShareForImage"];
+}
+- (void)didTapShareFor:(UIImage *)image {
+    NSLog(@"didTapShareForImage");
+    [self showAlert:@"didTapShareForImage"];
+}
+- (void)didTapDetailsFor:(NSString *)productCode {
+    NSLog(@"didTapDetailsForId->%@", productCode);
+    [self showAlert:[NSString stringWithFormat:@"didTapDetailsForId->%@", productCode]];
+}
+- (void)didTapWishlistFor:(NSString *)productCode {
+    NSLog(@"didTapWishlistForId->%@", productCode);
+    [self showAlert:[NSString stringWithFormat:@"didTapWishlistForId->%@", productCode]];
+}
+- (void)didTapCartFor:(NSString *)productCode {
+    NSLog(@"didTapCartForId->%@", productCode);
+    [self showAlert:[NSString stringWithFormat:@"didTapCartForId->%@", productCode]];
+}
+- (void)didTapRemoveCartFor:(NSString *)productCode {
+    NSLog(@"didTapRemoveCartForId->%@", productCode);
+    [self showAlert:[NSString stringWithFormat:@"didTapRemoveCartForId->%@", productCode]];
+}
+- (void)didTapUnWishlistFor:(NSString *)productCode {
+    NSLog(@"didTapUnWishlistForId->%@", productCode);
+    [self showAlert:[NSString stringWithFormat:@"didTapUnWishlistForId->%@", productCode]];
+}
+- (void)didJewellarySelectedFor:(NSString *)productCode {
+    NSLog(@"didJewellarySelectedForId->%@", productCode);
+    [self showAlert:[NSString stringWithFormat:@"didJewellarySelectedForId->%@", productCode]];
+
+}
+- (void)didSDKLoaded {
+    NSLog(@"didSDKLoaded....");
+    [self showAlert:@"didSDKLoaded"];
+}
+- (void)didClickBackButton {
+    NSLog(@"didClickedBackButton...");
+    [self showAlert:@"didClickedBackButton"];
+
+}
+- (void)didSubmitReview {
+    NSLog(@"didSubmitReview...");
+    [self showAlert:@"didSubmitReview"];
+
+}
+- (void)didImageCaptured {
+    NSLog(@"didImageCaptured...");
+    [self showAlert:@"didImageCaptured"];
+}
+
+- (void)showAlert:(NSString *)message {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Alert" message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 
 @end

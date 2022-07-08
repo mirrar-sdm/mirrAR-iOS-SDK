@@ -47,6 +47,71 @@ Step 3 -
 
 ```
 
+# To add delegate methods as callback
+
+Step 1- 
+Confirm to <MARCameraViewControllerDelegate> delegate
+```
+@interface MARViewController () <MARCameraViewControllerDelegate>
+```
+
+Step 2-
+Assign self to delegate
+```
+//Initialize SDK
+self.camera = [MARCameraViewController sharedInstance];
+self.camera.delegate = self;
+
+```
+Step 3-
+Implement followinng delegate methods into the viewCotroller where MARCameraViewController is beig initialized
+(All methods are optional)
+
+```
+#pragma mark: MARCameraViewControllerDelegate methods
+
+- (void)didTapDownloadFor:(UIImage *)image {
+    NSLog(@"didTapDownloadForImage");
+}
+- (void)didTapWhatsappToShare:(UIImage *)image {
+    NSLog(@"didTapWhatsappToShareForImage");
+}
+- (void)didTapShareFor:(UIImage *)image {
+    NSLog(@"didTapShareForImage");
+}
+- (void)didTapDetailsFor:(NSString *)productCode {
+    NSLog(@"didTapDetailsForId->%@", productCode);
+}
+- (void)didTapWishlistFor:(NSString *)productCode {
+    NSLog(@"didTapWishlistForId->%@", productCode);
+}
+- (void)didTapCartFor:(NSString *)productCode {
+    NSLog(@"didTapCartForId->%@", productCode);
+}
+- (void)didTapRemoveCartFor:(NSString *)productCode {
+    NSLog(@"didTapRemoveCartForId->%@", productCode);
+}
+- (void)didTapUnWishlistFor:(NSString *)productCode {
+    NSLog(@"didTapUnWishlistForId->%@", productCode);
+}
+- (void)didJewellarySelectedFor:(NSString *)productCode {
+    NSLog(@"didJewellarySelectedForId->%@", productCode);
+}
+- (void)didSDKLoaded {
+    NSLog(@"didSDKLoaded....");
+}
+- (void)didClickBackButton {
+    NSLog(@"didClickedBackButton...");
+}
+- (void)didSubmitReview {
+    NSLog(@"didSubmitReview...");
+}
+- (void)didImageCaptured {
+    NSLog(@"didImageCaptured...");
+}
+```
+
+
 # Notes
 1. The framework size is under 3Mb.
 2. Minimum iOS version Tested is iOS 11.
