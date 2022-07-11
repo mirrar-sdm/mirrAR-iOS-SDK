@@ -26,7 +26,11 @@
 - (void)didTapCartFor:(NSString *)productCode;
 - (void)didTapRemoveCartFor:(NSString *)productCode;
 - (void)didTapUnWishlistFor:(NSString *)productCode;
-
+- (void)didJewellarySelectedFor:(NSString *)productCode;
+- (void)didImageCaptured;
+- (void)didSDKLoaded;
+- (void)didClickBackButton;
+- (void)didSubmitReview;
 @end
 
 @interface MARCameraViewController : UIViewController <SFSafariViewControllerDelegate, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler, UIDocumentInteractionControllerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureMetadataOutputObjectsDelegate, MARPickerViewDelegate>
