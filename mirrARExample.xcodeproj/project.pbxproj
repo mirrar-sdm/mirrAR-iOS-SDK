@@ -14,6 +14,10 @@
 		44071BF524B96C0D002F47AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF424B96C0D002F47AA /* Assets.xcassets */; };
 		44071BF824B96C0D002F47AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */; };
 		44071BFB24B96C0D002F47AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44071BFA24B96C0D002F47AA /* main.m */; };
+		D611353C287D748F00B56CEE /* CustomInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D611353A287D748F00B56CEE /* CustomInputViewController.m */; };
+		D6113544287D77CD00B56CEE /* InputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6113542287D77CD00B56CEE /* InputViewCell.m */; };
+		D6113545287D77CD00B56CEE /* InputViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6113543287D77CD00B56CEE /* InputViewCell.xib */; };
+		D6113548287D84C600B56CEE /* InputViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6113547287D84C600B56CEE /* InputViewModel.m */; };
 		D682870028775FC400E16313 /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68286FE28775FB000E16313 /* mirrARSDK.framework */; };
 		D682870128775FC400E16313 /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D68286FE28775FB000E16313 /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -45,6 +49,13 @@
 		44071BF724B96C0D002F47AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44071BF924B96C0D002F47AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44071BFA24B96C0D002F47AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6113539287D748F00B56CEE /* CustomInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomInputViewController.h; sourceTree = "<group>"; };
+		D611353A287D748F00B56CEE /* CustomInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomInputViewController.m; sourceTree = "<group>"; };
+		D6113541287D77CD00B56CEE /* InputViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewCell.h; sourceTree = "<group>"; };
+		D6113542287D77CD00B56CEE /* InputViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewCell.m; sourceTree = "<group>"; };
+		D6113543287D77CD00B56CEE /* InputViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputViewCell.xib; sourceTree = "<group>"; };
+		D6113546287D84C600B56CEE /* InputViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewModel.h; sourceTree = "<group>"; };
+		D6113547287D84C600B56CEE /* InputViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewModel.m; sourceTree = "<group>"; };
 		D68286FE28775FB000E16313 /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +96,7 @@
 				44071BEC24B96C0A002F47AA /* SceneDelegate.m */,
 				44071BEE24B96C0A002F47AA /* ViewController.h */,
 				44071BEF24B96C0A002F47AA /* ViewController.m */,
+				D625A21E28820CC200AC777D /* CustomInputViewController */,
 				44071BF124B96C0A002F47AA /* Main.storyboard */,
 				44071BF424B96C0D002F47AA /* Assets.xcassets */,
 				44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */,
@@ -93,6 +105,20 @@
 				D68286FE28775FB000E16313 /* mirrARSDK.framework */,
 			);
 			path = mirrARExample;
+			sourceTree = "<group>";
+		};
+		D625A21E28820CC200AC777D /* CustomInputViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D6113539287D748F00B56CEE /* CustomInputViewController.h */,
+				D611353A287D748F00B56CEE /* CustomInputViewController.m */,
+				D6113541287D77CD00B56CEE /* InputViewCell.h */,
+				D6113542287D77CD00B56CEE /* InputViewCell.m */,
+				D6113543287D77CD00B56CEE /* InputViewCell.xib */,
+				D6113546287D84C600B56CEE /* InputViewModel.h */,
+				D6113547287D84C600B56CEE /* InputViewModel.m */,
+			);
+			path = CustomInputViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +182,7 @@
 				44071BF824B96C0D002F47AA /* LaunchScreen.storyboard in Resources */,
 				44071BF524B96C0D002F47AA /* Assets.xcassets in Resources */,
 				44071BF324B96C0A002F47AA /* Main.storyboard in Resources */,
+				D6113545287D77CD00B56CEE /* InputViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +196,10 @@
 				44071BF024B96C0A002F47AA /* ViewController.m in Sources */,
 				44071BEA24B96C0A002F47AA /* AppDelegate.m in Sources */,
 				44071BFB24B96C0D002F47AA /* main.m in Sources */,
+				D6113544287D77CD00B56CEE /* InputViewCell.m in Sources */,
+				D611353C287D748F00B56CEE /* CustomInputViewController.m in Sources */,
 				44071BED24B96C0A002F47AA /* SceneDelegate.m in Sources */,
+				D6113548287D84C600B56CEE /* InputViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

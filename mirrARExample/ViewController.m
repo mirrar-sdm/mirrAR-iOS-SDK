@@ -23,11 +23,6 @@
 }
 
 - (IBAction)launchSDK:(id)sender {
-        [self launchMirrarSDK];
-}
-
-- (void)launchMirrarSDK {
-    
     NSDictionary *productData = @{
         @"brandId": @"brand-id-here",
         @"productData": @{
@@ -53,20 +48,25 @@
                 }
         }
     };
-
     
+
+    [self launchMirrarSDKWithData:productData];
+}
+
+- (void)launchMirrarSDKWithData:(NSDictionary *)productData {
+
     //Initialize SDK
     self.camera = [MARCameraViewController sharedInstance];
     self.camera.delegate = self;
     self.camera.productData = productData;
     
     //PUSH
-    [self.navigationController pushViewController:self.camera animated:NO];
+//    [self.navigationController pushViewController:self.camera animated:NO];
     //   OR
     
     //PRESENT
-    //    self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
-    //    [self.navigationController presentViewController:self.camera animated:YES completion:nil];
+        self.camera.modalPresentationStyle = UIModalPresentationOverFullScreen;
+        [self.navigationController presentViewController:self.camera animated:YES completion:nil];
 }
 
 #pragma mark: MARCameraViewControllerDelegate methods
@@ -131,6 +131,15 @@
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Alert" message:message preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+}
+
+- (IBAction)unwindSegueFromCustomInput:(UIStoryboardSegue *)segue {
+    NSLog(@"customBrandData -->%@", self.customBrandData);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        if (self.customBrandData != nil) {
+            [self launchMirrarSDKWithData:self.customBrandData];
+        }
+    });
 }
 
 @end
