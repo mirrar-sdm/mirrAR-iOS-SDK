@@ -19,7 +19,9 @@
 @property (strong, nonatomic) NSMutableArray *arrayInputData;
 @end
 
-@implementation CustomInputViewController
+@implementation CustomInputViewController {
+    UITextField *activeField;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,25 +33,54 @@
     [self addMoreItem];
     
     [self.navigationController setNavigationBarHidden:YES];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardDidShowNotification object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillBeHidden:) name:UIKeyboardWillHideNotification object:nil];
+
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)addMoreItem {
     InputViewModel *model = [[InputViewModel alloc] init];
-    model.category = @"Earrings";
-    model.type = @"ear";
-    model.sku = @"51D2A3SLLABA18";
     [self.arrayInputData addObject:model];
     [self.tableViewInput reloadData];
 }
 
+- (void)keyboardWillShow:(NSNotification*)aNotification {
+    NSDictionary* info = [aNotification userInfo];
+    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+    self.tableViewInput.contentInset = contentInsets;
+    self.tableViewInput.scrollIndicatorInsets = contentInsets;
+
+    // If active text field is hidden by keyboard, scroll it so it's visible.
+    // Your app might not need or want this behavior.
+    CGRect aRect = self.view.frame;
+    aRect.size.height -= kbSize.height;
+    if (!CGRectContainsPoint(aRect, activeField.frame.origin) ) {
+        [self.tableViewInput scrollRectToVisible:activeField.frame animated:YES];
+    }
+}
+
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification {
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    self.tableViewInput.contentInset = contentInsets;
+    self.tableViewInput.scrollIndicatorInsets = contentInsets;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    
     if ([segue.identifier isEqualToString:@"unwindSegueFromCustomInput"]) {
         ViewController *vc = (ViewController *)[segue destinationViewController];
         vc.customBrandData = (NSDictionary *)sender;
@@ -87,6 +118,10 @@
     cell.inputFieldCategory.delegate = self;
     cell.inputFieldType.delegate = self;
     cell.inputFieldSKU.delegate = self;
+
+    cell.inputFieldCategory.returnKeyType = UIReturnKeyDone;
+    cell.inputFieldType.returnKeyType = UIReturnKeyDone;
+    cell.inputFieldSKU.returnKeyType = UIReturnKeyDone;
 
     return cell;
 }
@@ -127,6 +162,14 @@
     
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    activeField = textField;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    activeField = nil;
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     return [textField resignFirstResponder];
 }
@@ -140,7 +183,7 @@
 }
 
 - (IBAction)launchSDKAction:(id)sender {
-    NSString *brandId = @""; //[self.textFieldBrandId.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *brandId = [self.textFieldBrandId.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     if (brandId == nil || [brandId isKindOfClass:[NSNull class]] || [brandId isEqualToString:@""]) {
         [self showAlert:@"Enter Brand ID first"];
         return;
@@ -178,7 +221,6 @@
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 }
-
 
 
 @end
