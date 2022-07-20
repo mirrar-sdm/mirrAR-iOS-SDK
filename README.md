@@ -50,7 +50,7 @@ Step 3 -
 # To add delegate methods as callback
 
 Step 1- 
-Confirm to <MARCameraViewControllerDelegate> delegate
+Conform to <MARCameraViewControllerDelegate> delegate
 ```
 @interface MARViewController () <MARCameraViewControllerDelegate>
 ```
@@ -64,7 +64,7 @@ self.camera.delegate = self;
 
 ```
 Step 3-
-Implement followinng delegate methods into the viewCotroller where MARCameraViewController is beig initialized
+Implement followinng delegate methods into the viewCotroller where MARCameraViewController is being initialized
 (All methods are optional)
 
 ```
