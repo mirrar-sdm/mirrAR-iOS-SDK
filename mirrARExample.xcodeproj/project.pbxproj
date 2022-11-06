@@ -14,8 +14,8 @@
 		44071BF524B96C0D002F47AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF424B96C0D002F47AA /* Assets.xcassets */; };
 		44071BF824B96C0D002F47AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */; };
 		44071BFB24B96C0D002F47AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44071BFA24B96C0D002F47AA /* main.m */; };
-		D682870028775FC400E16313 /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68286FE28775FB000E16313 /* mirrARSDK.framework */; };
-		D682870128775FC400E16313 /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D68286FE28775FB000E16313 /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D61FFB3429182F4E00B7D50F /* mirrARSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61FFB3229182F2100B7D50F /* mirrARSDK.framework */; };
+		D61FFB3529182F4E00B7D50F /* mirrARSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D61FFB3229182F2100B7D50F /* mirrARSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D682870128775FC400E16313 /* mirrARSDK.framework in Embed Frameworks */,
+				D61FFB3529182F4E00B7D50F /* mirrARSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 		44071BF724B96C0D002F47AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44071BF924B96C0D002F47AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44071BFA24B96C0D002F47AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D68286FE28775FB000E16313 /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
+		D61FFB3229182F2100B7D50F /* mirrARSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mirrARSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D682870028775FC400E16313 /* mirrARSDK.framework in Frameworks */,
+				D61FFB3429182F4E00B7D50F /* mirrARSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +79,7 @@
 		44071BE724B96C0A002F47AA /* mirrARExample */ = {
 			isa = PBXGroup;
 			children = (
+				D61FFB3229182F2100B7D50F /* mirrARSDK.framework */,
 				44071BE824B96C0A002F47AA /* AppDelegate.h */,
 				44071BE924B96C0A002F47AA /* AppDelegate.m */,
 				44071BEB24B96C0A002F47AA /* SceneDelegate.h */,
@@ -90,7 +91,6 @@
 				44071BF624B96C0D002F47AA /* LaunchScreen.storyboard */,
 				44071BF924B96C0D002F47AA /* Info.plist */,
 				44071BFA24B96C0D002F47AA /* main.m */,
-				D68286FE28775FB000E16313 /* mirrARSDK.framework */,
 			);
 			path = mirrARExample;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9H39RMB9UU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -320,12 +320,13 @@
 					"$(PROJECT_DIR)/mirrARExample",
 				);
 				INFOPLIST_FILE = mirrARExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = mirrARSDKExample;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 4.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = sdk.mirrARSDK.mirrARExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,7 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9H39RMB9UU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -347,12 +348,13 @@
 					"$(PROJECT_DIR)/mirrARExample",
 				);
 				INFOPLIST_FILE = mirrARExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = mirrARSDKExample;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 4.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = sdk.mirrARSDK.mirrARExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
