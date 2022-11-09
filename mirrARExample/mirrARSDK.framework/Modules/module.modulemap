@@ -6,6 +6,6 @@ framework module mirrARSDK {
 }
 
 module mirrARSDK.Swift {
-    header "mirrARSDK-Swift.h"
-    requires objc
+  header "mirrARSDK-Swift.h"
+  requires objc
 }
