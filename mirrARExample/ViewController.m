@@ -69,6 +69,7 @@
     //    [self.navigationController presentViewController:self.camera animated:YES completion:nil];
 }
 
+
 #pragma mark: MARCameraViewControllerDelegate methods
 
 - (void)didTapDownloadFor:(UIImage *)image {
