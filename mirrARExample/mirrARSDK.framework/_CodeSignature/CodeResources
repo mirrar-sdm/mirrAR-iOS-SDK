@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/mirrARSDK-Swift.h</key>
 		<data>
-		+yiNqkE0pDIyh9VRZNJRPkG0n9w=
+		sFcvpTtq1YikK27TbxiofHPcXR0=
 		</data>
 		<key>Headers/mirrARSDK.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		x7F9GxmZX3nbClS0q3d7gss02CQ=
+		LqWqWsoSkjAHweiEpNBNR4AdYkM=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		H5PPmaZTpF9UbSug+exWQ8XOx0A=
+		IzkrWRZiZcaDOWq2eTYHor2pfIE=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -50,23 +50,23 @@
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		AKQOolNQKu4GMPHgJG9WHhDNYoE=
+		0yAA8jFTvrQqWZHj5O60qn/cdtE=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		3pZWGdD2zlcOZKMQM7nSDBKR/So=
+		IDEGXkicudGwhLKuG7dkspS9ZkU=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		AKQOolNQKu4GMPHgJG9WHhDNYoE=
+		0yAA8jFTvrQqWZHj5O60qn/cdtE=
 		</data>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		4GbwbKV1eVo7Xop2Xrie3ZUbvUE=
+		BrK5yG+K4tvkshg7NVoT5a6IoPc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		1ojeJFi8A4fVTI0kmNMR7AA4m50=
+		MxgRag0trGrYNRexJq2nl09cFaE=
 		</data>
 		<key>README.md</key>
 		<data>
@@ -162,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+yiNqkE0pDIyh9VRZNJRPkG0n9w=
+			sFcvpTtq1YikK27TbxiofHPcXR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			g0EiLYfrPnTWPkg3PlzN2FcPWUbvH5n1+DczjUe4u94=
+			90wJerIPU+/DXQZjDQxaN5281aLj9PtCIXpGV0nnUEI=
 			</data>
 		</dict>
 		<key>Headers/mirrARSDK.h</key>
@@ -195,11 +195,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H5PPmaZTpF9UbSug+exWQ8XOx0A=
+			IzkrWRZiZcaDOWq2eTYHor2pfIE=
 			</data>
 			<key>hash2</key>
 			<data>
-			8uSqTIPrQJRDU3SOyq3BRiSoEiijOfSyYCcJug6c0r4=
+			UKpo9tfbAS3IlIChxWKg+0mjaoynb8hbmB0dfkyXQGo=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -217,55 +217,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AKQOolNQKu4GMPHgJG9WHhDNYoE=
+			0yAA8jFTvrQqWZHj5O60qn/cdtE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uh+rskYgCmqNtsbztSrT0zi1RDNl9LsAkeEWzVtldiM=
+			e2lANHso3qsHHbnsK8pxo8GZ4p59bKi6HhLwHDDXl3k=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3pZWGdD2zlcOZKMQM7nSDBKR/So=
+			IDEGXkicudGwhLKuG7dkspS9ZkU=
 			</data>
 			<key>hash2</key>
 			<data>
-			L+K5XQacpV4QtCIxT6D+AzDhBs2VQ2dxEwYTcAvlBqU=
+			xkvh/ZLE5pZrcN60TIfYZundYZdTvA9m8nd/+vTVrB4=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AKQOolNQKu4GMPHgJG9WHhDNYoE=
+			0yAA8jFTvrQqWZHj5O60qn/cdtE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uh+rskYgCmqNtsbztSrT0zi1RDNl9LsAkeEWzVtldiM=
+			e2lANHso3qsHHbnsK8pxo8GZ4p59bKi6HhLwHDDXl3k=
 			</data>
 		</dict>
 		<key>Modules/mirrARSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4GbwbKV1eVo7Xop2Xrie3ZUbvUE=
+			BrK5yG+K4tvkshg7NVoT5a6IoPc=
 			</data>
 			<key>hash2</key>
 			<data>
-			MpxVP0vZfT/ZH7qHs2rRsEqjOubVpPHzYWcKkDWIuow=
+			SZpNQIVXlPxnB28bprjupKKdEn8sFf/RGRJKXaAxsGg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1ojeJFi8A4fVTI0kmNMR7AA4m50=
+			MxgRag0trGrYNRexJq2nl09cFaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			kYvqbrrKbOScr0DIVbVBEE+P4bOhfvx0pDKvYpAyTSA=
+			436czpgS9meWFgaJ4LHeAtguSz2BVq5ytkpOJA+mE9w=
 			</data>
 		</dict>
 		<key>README.md</key>
