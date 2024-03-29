@@ -1,7 +1,7 @@
 framework module mirrARSDK {
   umbrella header "mirrARSDK.h"
-
   export *
+
   module * { export * }
 }
 
