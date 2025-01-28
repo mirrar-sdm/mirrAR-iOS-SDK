@@ -29,29 +29,30 @@
 - (void)launchMirrarSDK {
     
     NSDictionary *productData = @{
-        @"brandId": @"brand-id-here",
-        @"productData": @{
-                @"Necklaces": @{
-                        @"items": @[@"1", @"2", @"3"],
-                        @"type": @"neck"
-                },
-                @"Earrings": @{
-                        @"items": @[@"1", @"2"],
-                        @"type": @"ear"
-                },
-                @"Mangalsutras": @{
-                        @"items": @[@"1", @"2", @"3"],
-                        @"type": @"neck"
-                },
-                @"NecklaceSets": @{
-                        @"items": @[@"1", @"2"],
-                        @"type": @"set"
-                },
-                @"PendantSets": @{
-                        @"items": @[@"1", @"2"],
-                        @"type": @"set"
-                }
-        }
+        @"brandId": @"e3adf510-08d9-4cdb-88a3-bd28acedf097",
+        @"sku": @"1713BM02"
+//        @"productData": @{
+//                @"Necklaces": @{
+//                        @"items": @[@"1", @"2", @"3"],
+//                        @"type": @"neck"
+//                },
+//                @"Earrings": @{
+//                        @"items": @[@"1", @"2"],
+//                        @"type": @"ear"
+//                },
+//                @"Mangalsutras": @{
+//                        @"items": @[@"1", @"2", @"3"],
+//                        @"type": @"neck"
+//                },
+//                @"NecklaceSets": @{
+//                        @"items": @[@"1", @"2"],
+//                        @"type": @"set"
+//                },
+//                @"PendantSets": @{
+//                        @"items": @[@"1", @"2"],
+//                        @"type": @"set"
+//                }
+//        }
     };
 
     
